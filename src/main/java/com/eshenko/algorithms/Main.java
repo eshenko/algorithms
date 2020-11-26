@@ -56,7 +56,14 @@ public class Main {
         //своя реализация сортировки выбором
         int[] unsortedArray = {3, 0, 10, -4, 500, 7};
         Sort.selectionSort(unsortedArray);
+        System.out.println("selectionSort");
         System.out.println(Arrays.toString(unsortedArray) + "\n");
+
+        //своя реализация сортировки пузырьков
+        int[] unsortedArray3 = {3, 0, 10, -4, 500, 7};
+        Sort.bubbleSort(unsortedArray3);
+        System.out.println("bubbleSort");
+        System.out.println(Arrays.toString(unsortedArray3) + "\n");
 
         //сортировка с помощью метода класса Arrays
         int[] unsortedArray2 = {3, 0, 10, -4, 500, 7};

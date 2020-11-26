@@ -18,4 +18,25 @@ public class Sort {
         }
     }
 
+    //реализация сортировки пузырьком
+    public static int[] bubbleSort(int[] array) {
+        int i = 0;
+        int goodPairsCounter = 0;
+        do {
+            if (array[i] > array[i + 1]) {
+                int tmp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = tmp;
+                goodPairsCounter = 0;
+            } else {
+                goodPairsCounter++;
+            }
+            i++;
+            if (i == array.length - 1) {
+                i = 0;
+            }
+        } while (goodPairsCounter != array.length - 1);
+        return array;
+    }
+
 }
